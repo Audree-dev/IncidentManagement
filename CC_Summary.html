@@ -1,0 +1,1383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>:: Quality Management System ::</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<link rel="stylesheet" href="css/jquery.scrolling-tabs.min.css" >
+<!-- Commeon CSS Sheet-->
+<link rel="stylesheet" href="css/common.css" >
+<link rel="stylesheet" href="css/style.css" >
+<link rel="stylesheet" href="css/dashboard.css" >
+<!-- Font Awesome -->
+<link href="css/fontawesome-all.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand navbar-dark topNav fixed-top"> <span class="dashBoardLogo"></span> <a class="navbar-brand" href="javascript:void(0)"><span class="brandIcon"></span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="javascript:void(0)" id="menuNavigate"><span class="fa fa-align-right"></span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="javascript:void(0)"><span class="fa fa-bell"></span></a> </li>
+      <li class="nav-item mobDisNone"> <a class="nav-link" href="dashboard.html"><span class="fa fa-home"></span></a> </li>
+    </ul>
+    <ul class="navbar-nav my-lg-0">
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle rightDDMenu clearfix" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="avatarIcon"></span>
+        <div class="userNameNid">
+          <p>Chandu Adimulam</p>
+          <span>800006</span> </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right profileDDmenu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="javascript:void(0)"><span class="fa fa-user-circle"></span> Profile</a> <a class="dropdown-item" href="javascript:void(0)"><span class="fa fa-lock"></span> Change Password</a> <a class="dropdown-item" href="javascript:void(0)"><span class="fa fa-cog"></span> Settings</a> <a class="dropdown-item" href="index.html"><span class="fa fa-power-off"></span> Logout</a> </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<section>
+  <aside class="leftMain">
+    <ul>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon active" data-toggle="dropdown"><span class="changeControl"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>Change Control </h3>
+          </li>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="CC_create.html">Create</a></li>
+          <li><a href="javascript:void(0)">Track My CC</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">Change Control List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">CC Log</a></li>
+              <li><a href="#!">Action Plan Log</a></li>
+              <li><a href="#!">Action Plan Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="deviation"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>Deviation </h3>
+          </li>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="deviation_create.html">Create</a></li>
+          <li><a href="javascript:void(0)">Track My Deviation</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">Deviation  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">Dev Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="incedent"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>INCIDENT</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My INCIDENT</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">INCIDENT  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">INCIDENT Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="oos"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>OOS</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My OOS</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">OOS  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">OOS Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="oot"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>OOT</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My OOT</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">OOT  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">OOT Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="businesssComplaint"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>Market Complaints</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My Complaints</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">Deviation  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">Dev Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="capa"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>CAPA</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My CAPA</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">CAPA  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="index.html" class="icon"><span class="fa fa-power-off"></span></a></li>
+    </ul>
+  </aside>
+  <div class="contentMain">
+    <div class="row">
+      <div class="col-sm-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Change Control</li>
+            <li class="breadcrumb-item active" aria-current="page">Create</li>
+          </ol>
+          <a href="javascript:void(0)" class="float-right btn-success btn xsBtn mt15" id="divToggleBtn">Hide Workflow</a> </nav>
+        <div id="mainForflow">
+          <div class="mainFlowDevIn bg-white p-3">
+            <ul>
+              <li class="active">
+                <div class="icoM"><span class="fa fa-flag"></span></div>
+                <p>Initiation</p>
+              </li>
+              <li>
+                <div class="icoM"><span class="fa fa-flag"></span></div>
+                <p>Review by HOD</p>
+              </li>
+              <li>
+                <div class="icoM"><span class="fa fa-user-circle"></span></div>
+                <p>Preliminary Review by QA</p>
+              </li>
+              <li>
+                <div class="icoM"><span class="fa fa-search"></span></div>
+                <p>CFT Review</p>
+              </li>
+              <li>
+                <div class="icoM"><span class="fa fa-eye"></span></div>
+                <p>QA Approval/Rejection & Action Plans Assignment</p>
+              </li>
+              <li>
+                <div class="icoM"><span class="fa fa-user-secret"></span></div>
+                <p>Action Plan Execution</p>
+              </li>
+              <li>
+                <div class="icoM"><span class="fa fa-flag"></span></div>
+                <p>Action Plans Verification by QA</p>
+              </li>
+              <li>
+                <div class="icoM"><span class="fa fa-flag"></span></div>
+                <p>Change Control Closure by QA</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="devCreateSteps">
+          <ul class="nav nav-tabs  nav-justified" id="tab-next-prev" role="tablist">
+            <li class="nav-item"> <a class="nav-link " id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Preliminary Information</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Change Object Details</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Change Praposal</a> </li>
+            <li class="nav-item"> <a class="nav-link active" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Summary</a> </li>
+          </ul>
+          <div class="tab-content" id="tab-next-prev-content">
+            <div class="tab-pane fade " id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+              <div class="devTabCOntent">
+                <div class="whiteCard">
+                  <form class="formMain">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Plant</label>
+                              <select class="form-control">
+                                <option>--- Select Plant ---</option>
+                                <option>Unit 1</option>
+                                <option>Unit 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Reference Notifications</label>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="form-group">
+                              <label>Brief Description of Change Control* <span class="star">*</span></label>
+                              <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Change Area <span class="star">*</span></label>
+                              <select class="form-control">
+                                <option>--- Select Area ---</option>
+                                <option>Manufacturing Process</option>
+                                <option>Analytical Process</option>
+                                <option>QMS Process</option>
+                                <option>Vendor Process</option>
+                                <option>IT Process</option>
+                                <option>Facility & Utility</option>
+                                <option>Equipment & Instrument</option>
+                                <option>Packaging & Labeling</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Change Category <span class="star">*</span></label>
+                              <select class="form-control">
+                                <option>--- Select Category ---</option>
+                                <option>Temporary Change</option>
+                                <option>Permanent Change</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="text-center mt-2"> <a href="#" role="button" class="btn btn-info btn-sm minW80 btn-tab-next">Next <span class="fa fa-angle-double-right"></span></a> </div>
+            </div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+              <div class="devTabCOntent">
+                <div class="whiteCard">
+                  <ul class="vertiTabMain clearfix">
+                    <li>
+                      <div class="nav flex-column nav-pills vPillsMain" id="v-pills-tab" role="tablist" aria-orientation="vertical"> <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Manufacturing
+                        Process</a> <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Manufacturing
+                        Process</a> <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Analytical
+                        Process</a> <a href="javascript:void(0)" class="nav-link addNewArea" data-toggle="modal" data-target="#addNewArea"><span class="fa fa-plus-circle"></span></a> </div>
+                    </li>
+                    <li>
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                          <form class="formMain">
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <label>Change Object</label>
+                                <select class="form-control">
+                                  <option>--- Select Object ---</option>
+                                  <option>Shelf Life Change</option>
+                                  <option>Change in In-Process Checks</option>
+                                  <option>Change in Process Parameter </option>
+                                  <option>Change in Process steps</option>
+                                  <option>Change in Environment Condition</option>
+                                  <option>Change in Hold time period</option>
+                                  <option>Change in Dispensing Details</option>
+                                  <option>Change in Tooling Spec</option>
+                                  <option>Change of Equipment</option>
+                                  <option>Change in Batch Size</option>
+                                  <option>Change in Lot Size </option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Change Parameter<span class="star">*</span></label>
+                                <select class="form-control">
+                                  <option>--- Select Parameter ---</option>
+                                  <option>Include Shelf life</option>
+                                  <option>Revision in Shelf life</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Change Sub Parameter</label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Product</label>
+                                <select class="form-control">
+                                  <option>--- Select Product ---</option>
+                                  <option>Levetiracetam</option>
+                                  <option>Montelukast</option>
+                                  <option>Omeprazole</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Batches</label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Market<span class="star">*</span></label>
+                                <select class="form-control">
+                                  <option>--- Select Market ---</option>
+                                  <option>US</option>
+                                  <option>EUROPE</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Equipment / Instrument No.</label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Area No. & Name </label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <hr>
+                                <label>Impacted Document No(s)</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Existing">
+                              </div>
+                              <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Proposed">
+                              </div>
+                              <div class="col-sm-2">
+                                <button class="btn btn-info btn-sm"><span class="fa fa-plus-circle"></span></button>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <p class="mb-1">List of Documents</p>
+                                <table class="table table-bordered table-hover mb-2">
+                                  <thead>
+                                    <tr>
+                                      <th class="text-center">S.No</th>
+                                      <th>Existing</th>
+                                      <th class="text-center">Proposed</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td width="80" align="center">1</td>
+                                      <td>ABCD-00</td>
+                                      <td width="80" align="center">ABCD-01</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="80" align="center">2</td>
+                                      <td>XYZ-00</td>
+                                      <td width="80" align="center">XYZ-01</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                          <form class="formMain">
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <label>Change Object</label>
+                                <select class="form-control">
+                                  <option>--- Select Object ---</option>
+                                  <option>Shelf Life Change</option>
+                                  <option>Change in In-Process Checks</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Change Parameter<span class="star">*</span></label>
+                                <select class="form-control">
+                                  <option>--- Select Parameter ---</option>
+                                  <option>Include Shelf life</option>
+                                  <option>Revision in Shelf life</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Change Sub Parameter</label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Product</label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Batches</label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Market<span class="star">*</span></label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Equipment / Instrument No.</label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Area No. & Name </label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <hr>
+                                <label>Impacted Document No(s)</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Existing">
+                              </div>
+                              <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Proposed">
+                              </div>
+                              <div class="col-sm-2">
+                                <button class="btn btn-info btn-sm"><span class="fa fa-plus-circle"></span></button>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <p class="mb-1">List of Documents</p>
+                                <table class="table table-bordered table-hover mb-2">
+                                  <thead>
+                                    <tr>
+                                      <th class="text-center">S.No</th>
+                                      <th>Existing</th>
+                                      <th class="text-center">Proposed</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td width="80" align="center">1</td>
+                                      <td>ABCD-00</td>
+                                      <td width="80" align="center">ABCD-01</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="80" align="center">2</td>
+                                      <td>XYZ-00</td>
+                                      <td width="80" align="center">XYZ-01</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                          <form class="formMain">
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <label>Change Object</label>
+                                <select class="form-control">
+                                  <option>--- Select Object ---</option>
+                                  <option>Shelf Life Change</option>
+                                  <option>Change in In-Process Checks</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Change Parameter<span class="star">*</span></label>
+                                <select class="form-control">
+                                  <option>--- Select Parameter ---</option>
+                                  <option>Include Shelf life</option>
+                                  <option>Revision in Shelf life</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Change Sub Parameter</label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Product</label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Batches</label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Market<span class="star">*</span></label>
+                                <input type="text" class="form-control" />
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Equipment / Instrument No.</label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-3">
+                                <label>Area No. & Name </label>
+                                <select class="form-control">
+                                  <option>Select</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <hr>
+                                <label>Impacted Document No(s)</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Existing">
+                              </div>
+                              <div class="col-sm-2">
+                                <input type="text" class="form-control" placeholder="Proposed">
+                              </div>
+                              <div class="col-sm-2">
+                                <button class="btn btn-info btn-sm"><span class="fa fa-plus-circle"></span></button>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <p class="mb-1">List of Documents</p>
+                                <table class="table table-bordered table-hover mb-2">
+                                  <thead>
+                                    <tr>
+                                      <th class="text-center">S.No</th>
+                                      <th>Existing</th>
+                                      <th class="text-center">Proposed</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td width="80" align="center">1</td>
+                                      <td>ABCD-00</td>
+                                      <td width="80" align="center">ABCD-01</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="80" align="center">2</td>
+                                      <td>XYZ-00</td>
+                                      <td width="80" align="center">XYZ-01</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center clearfix mt-2"> <a href="#" role="button" class="btn btn-info btn-sm minW80 btn-tab-prev"><span class="fa fa-angle-double-left"></span> Previous</a> <a href="#" class="btn btn-info btn-sm minW80">Draft</a> <a href="#" role="button" class="btn btn-info btn-sm minW80 btn-tab-next">Next <span class="fa fa-angle-double-right"></span></a> </div>
+            </div>
+            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+              <div class="devTabCOntent">
+                <div class="whiteCard">
+                  <div class="formMain">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <p class="mb-1 clearfix mt-2 boldF"><span class="pt-1 d-inline-block">Details of Change</span>
+                          <button class="btn btn-info btn-sm float-right" data-toggle="modal" data-target="#changeDetail"><span class="fa fa-plus-circle"></span></button>
+                        </p>
+                        <table class="table table-bordered table-hover mb-2">
+                          <thead>
+                            <tr>
+                              <th class="text-center">S.No</th>
+                              <th>Existing</th>
+                              <th>Proposed</th>
+                              <th>Justification</th>
+                              <th class="text-center">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td width="80" align="center">1</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon"><span class="fa fa-pencil-alt"></span></a> <a href="#!" class="roundSmIcon redTrash"><span class="fa fa-trash-alt"></span></a></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">2</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon"><span class="fa fa-pencil-alt"></span></a> <a href="#!" class="roundSmIcon redTrash"><span class="fa fa-trash-alt"></span></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-sm-6">
+                        <label class="mb-1 boldF">Supporting Documents</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label>Stability Data <span class="star">*</span></label>
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="file" class="form-control fileFeild" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label>Justification Report </label>
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="file" class="form-control fileFeild" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label>Risk Assisment</label>
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="file" class="form-control fileFeild" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label>Batch Data</label>
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="file" class="form-control fileFeild" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <select class="form-control">
+                          <option>Select Name</option>
+                          <option>Investigation Report</option>
+                          <option>Stability Data</option>
+                          <option>Justification Report</option>
+                          <option>Justification Report</option>
+                          <option>Analytical Report</option>
+                          <option>Trend Data</option>
+                          <option>Other Supporting Document</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-3">
+                        <input type="file" class="form-control fileFeild" />
+                      </div>
+                      <div class="col-sm-3">
+                        <button class="btn btn-info btn-sm"><span class="fa fa-plus-circle"></span></button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <hr>
+                        <p class="mt-2 mb-1 boldF">Impact Assessment</p>
+                        <table class="table table-bordered">
+                          <thead>
+                          <th>S.No.</th>
+                            <th>Assessment</th>
+                            <th>Decision</th>
+                              </thead>
+                          <tbody>
+                            <tr>
+                              <td width="80" align="center">1</td>
+                              <td> Is there an impact on manufacturing MPR/MFR/eMBR?</td>
+                              <td width="120"><form>
+                                  <div class="radio">
+                                    <input id="radio-1" name="radio" type="radio" checked>
+                                    <label for="radio-1" class="radio-label">Yes</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input id="radio-2" name="radio" type="radio">
+                                    <label  for="radio-2" class="radio-label">No</label>
+                                  </div>
+                                </form></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">2</td>
+                              <td>Is there an impact on PIL/Leaflet artwork</td>
+                              <td width="120"><form>
+                                  <div class="radio">
+                                    <input id="radio-3" name="radio" type="radio">
+                                    <label for="radio-3" class="radio-label">Yes</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input id="radio-4" name="radio" type="radio" checked>
+                                    <label  for="radio-4" class="radio-label">No</label>
+                                  </div>
+                                </form></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">3</td>
+                              <td>Is there an impact on  finished product specification COA</td>
+                              <td width="120"><form>
+                                  <div class="radio">
+                                    <input id="radio-3" name="radio" type="radio">
+                                    <label for="radio-3" class="radio-label">Yes</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input id="radio-4" name="radio" type="radio" checked>
+                                    <label  for="radio-4" class="radio-label">No</label>
+                                  </div>
+                                </form></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">4</td>
+                              <td>Is there an impact on  packing MPR/MFR/ eMBR?</td>
+                              <td width="120"><form>
+                                  <div class="radio">
+                                    <input id="radio-3" name="radio" type="radio">
+                                    <label for="radio-3" class="radio-label">Yes</label>
+                                  </div>
+                                  <div class="radio">
+                                    <input id="radio-4" name="radio" type="radio" checked>
+                                    <label  for="radio-4" class="radio-label">No</label>
+                                  </div>
+                                </form></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <hr>
+                        <p class="mb-1 boldF"><span class="pt-1 d-inline-block">Tentative Action Plans</span>
+                          <button class="btn btn-sm btn-info float-right" data-toggle="modal" data-target="#actionPlans"> <span class="fa fa-plus-circle"></span></button>
+                        </p>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th class="text-center">S.No</th>
+                              <th>Action Plan</th>
+                              <th>Resp. Person</th>
+                              <th>Time in Days</th>
+                              <th class="text-center">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td width="80" align="center">1</td>
+                              <td>Batch manufacturing document (MPR/MFR/eMBR) to be revised.</td>
+                              <td>Prabhakar</td>
+                              <td>20 Days</td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon" data-toggle="modal" data-target="#actionPlans"><span class="fa fa-pencil-alt"></span></a></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">2</td>
+                              <td>Batch packing document (MPR/MFR/eMBR/datasheet) to be revised.</td>
+                              <td>Chandu Adimulam</td>
+                              <td>10 Days</td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon" data-toggle="modal" data-target="#actionPlans"><span class="fa fa-pencil-alt"></span></a></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">3</td>
+                              <td>Specification to be revised.</td>
+                              <td></td>
+                              <td></td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon" data-toggle="modal" data-target="#actionPlans"><span class="fa fa-pencil-alt"></span></a></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">4</td>
+                              <td>SAP Master Data to be updated.</td>
+                              <td></td>
+                              <td></td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon" data-toggle="modal" data-target="#actionPlans"><span class="fa fa-pencil-alt"></span></a></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">5</td>
+                              <td>COA template of product to be updated.</td>
+                              <td></td>
+                              <td></td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon" data-toggle="modal" data-target="#actionPlans"><span class="fa fa-pencil-alt"></span></a></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">6</td>
+                              <td>Training to concern personnel to be done.</td>
+                              <td></td>
+                              <td></td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon" data-toggle="modal" data-target="#actionPlans"><span class="fa fa-pencil-alt"></span></a></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">7</td>
+                              <td>Artwork of packing material to be revised.</td>
+                              <td></td>
+                              <td></td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon" data-toggle="modal" data-target="#actionPlans"><span class="fa fa-pencil-alt"></span></a></td>
+                            </tr>
+                            <tr>
+                              <td width="80" align="center">8</td>
+                              <td>Hold note of leftover material to be obtained for blocking of material.</td>
+                              <td></td>
+                              <td></td>
+                              <td width="80" align="center"><a href="#!" class="roundSmIcon" data-toggle="modal" data-target="#actionPlans"><span class="fa fa-pencil-alt"></span></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center clearfix mt-2"> <a href="#" role="button" class="btn btn-info btn-sm minW80 btn-tab-prev"><span class="fa fa-angle-double-left"></span> Previous</a> <a href="#" class="btn btn-info btn-sm minW80">Draft</a> <a href="#" role="button" class="btn btn-info btn-sm minW80 btn-tab-next">Next <span class="fa fa-angle-double-right"></span></a> </div>
+            </div>
+            <div class="tab-pane fade show active" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+              <div class="devTabCOntent">
+                <div class="whiteCard">
+                  <p class="blueTitle">Preliminary  Information</p>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td width="25%"><label class="disLab boldF">Change Control No.</label></td>
+                      <td width="25%">AD-CC-001</td>
+                      <td width="25%"><label class="disLab boldF">Change Control Created on</label></td>
+                      <td width="25%">01/Jan/2019</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Created By</label></td>
+                      <td>Chandu Adimulam</td>
+                      <td><label class="disLab boldF">Department</label></td>
+                      <td>Warehouse</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Reference No(s)</label></td>
+                      <td>CC-12-15</td>
+                      <td><label class="disLab boldF">Change Type</label></td>
+                      <td>Major</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Change Category</label></td>
+                      <td>Temporary</td>
+                      <td><label class="disLab boldF">Status</label></td>
+                      <td>Approved</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">Brief Description of Change</p>
+                  <div class="whiteCard">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                  <p class="blueTitle mt-3">Impacted Documents</p>
+                  <table class="table table-bordered ">
+                    <thead>
+                      <tr>
+                        <th>Exiting Document No.</th>
+                        <th>Proposed Document No.</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td>ABCD-00</td>
+                      <td>ABCD-01</td>
+                    </tr>
+                    <tr>
+                      <td>XYZ-00</td>
+                      <td>XYZ-01</td>
+                    </tr>
+                  </table>
+                  <h3 class="boldF mt-2 mb-3 font16">Change Proposal Details</h3>
+                  <p class="blueTitle">1. Manufacturing Process – Change in Shelf life</p>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td width="200"><label class="disLab boldF">Product Name(s)</label></td>
+                      <td>Aspirin</td>
+                      <td><label class="disLab boldF">Market(s)</label></td>
+                      <td>USA, UK</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Batch No.(s)</label></td>
+                      <td>XYZ</td>
+                      <td><label class="disLab boldF">Area No(s) / Nam</label></td>
+                      <td>Comp-001, Coat-001</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Equipment No.(s)/Name</label></td>
+                      <td colspan="3">PRE001</td>
+                    </tr>
+                  </table>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th width="60" class="text-center">S. No.</th>
+                        <th>Existing Details</th>
+                        <th>Proposed Details</th>
+                        <th>Justification</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align="center">1</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </td>
+                        <td>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. sit amet..", comes from a line in section 1.10.32.</td>
+                        <td>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</td>
+                      </tr>
+                      <tr>
+                        <td align="center">2</td>
+                        <td>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                        <td>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. sit amet..", comes from a line in section 1.10.32.</td>
+                        <td>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="blueTitle">2. Manufacturing Process – Change in process parameters</p>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td width="200"><label class="disLab boldF">Product Name(s)</label></td>
+                      <td>Aspirin</td>
+                      <td><label class="disLab boldF">Market(s)</label></td>
+                      <td>USA, UK</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Batch No.(s)</label></td>
+                      <td>XYZ</td>
+                      <td><label class="disLab boldF">Area No(s) / Nam</label></td>
+                      <td>Comp-001, Coat-001</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Equipment No.(s)/Name</label></td>
+                      <td colspan="3">PRE001</td>
+                    </tr>
+                  </table>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th width="60" class="text-center">S. No.</th>
+                        <th>Existing Details</th>
+                        <th>Proposed Details</th>
+                        <th>Justification</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align="center">1</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </td>
+                        <td>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. sit amet..", comes from a line in section 1.10.32.</td>
+                        <td>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</td>
+                      </tr>
+                      <tr>
+                        <td align="center">2</td>
+                        <td>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                        <td>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. sit amet..", comes from a line in section 1.10.32.</td>
+                        <td>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="blueTitle">Initial Impact Assessment</p>
+                  <table class="table table-bordered mb-0">
+                    <thead>
+                      <tr>
+                        <th class="text-center">Sl. No.</th>
+                        <th>Assessment</th>
+                        <th>Impact</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td width="60" align="center">1</td>
+                        <td>Is there an impact on packing MPR/MFR/ eMBR?</td>
+                        <td><div class="form-inline">
+                            <input type="radio" />
+                            <label>Yes</label>
+                            <input type="radio" class="ml-2" />
+                            <label>No</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td align="center">2</td>
+                        <td>Is there an impact on packing MPR/MFR/ eMBR?</td>
+                        <td><div class="form-inline">
+                            <input type="radio" />
+                            <label>Yes</label>
+                            <input type="radio" class="ml-2" />
+                            <label>No</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td align="center">3</td>
+                        <td>Is there an impact on packing MPR/MFR/ eMBR?</td>
+                        <td><div class="form-inline">
+                            <input type="radio" />
+                            <label>Yes</label>
+                            <input type="radio" class="ml-2" />
+                            <label>No</label>
+                          </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Initiated By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Initiated On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">HOD Review <span class="float-right">Srikanth K</span></p>
+                  <div class="whiteCard"> Review details along with impact assessment and comments </div>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Reviewed By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Reviewed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">Preliminary Quality Assurance Review <span class="float-right">Satish Kumar</span></p>
+                  <div class="whiteCard">Review details along with impact assessment, comments and Cross functional team </div>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Reviewed By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Reviewed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <h3 class="boldF mt-2 mb-3 font16">Impact Assessment by Cross Functional Teams</h3>
+                  <p class="blueTitle">Quality Control Review <span class="float-right">Prabhkar Rao J</span></p>
+                  <div class="whiteCard">Review details along with impact assessment, comments and decision</div>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Reviewed By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Reviewed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">Regulatory Review<span class="float-right">Pavan</span></p>
+                  <div class="whiteCard">Review details along with impact assessment, comments and decision</div>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Reviewed By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Reviewed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">Production Review<span class="float-right">Muneeb Ahmad</span></p>
+                  <div class="whiteCard">Review details along with impact assessment, comments and decision</div>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Reviewed By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Reviewed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">Quality Assurance Review<span class="float-right">Radha Krishna</span></p>
+                  <div class="whiteCard">Final decision details along with impact assessment, comments and finalized action plans</div>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Reviewed By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Reviewed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <h3 class="boldF mt-2 mb-3 font16">Action Plans</h3>
+                  <p class="blueTitle">Action Plans 1<span class="float-right">TCD: 31/05/2019</span><span class="float-right mr-3">Radha Krishna,</span></p>
+                  <div class="whiteCard">Initial action plan details along with extensions, effectiveness and verification details</div>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Action Plan completed By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Completed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Action Plan verified by</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Verified On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">Action Plans 2<span class="float-right">TCD: 31/05/2019</span><span class="float-right mr-3">Radha Krishna,</span></p>
+                  <div class="whiteCard">Initial action plan details along with extensions, effectiveness and verification details</div>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Action Plan completed By</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Completed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                    <tr>
+                      <td><label class="disLab boldF">Action Plan verified by</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Verified On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">Change Control Closure</p>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td><label class="disLab boldF">Change Control Closed by</label></td>
+                      <td>Prabhakar</td>
+                      <td><label class="disLab boldF">Closed On</label></td>
+                      <td>19-03-2019, 16:30:21</td>
+                    </tr>
+                  </table>
+                  <p class="blueTitle">Supporting Documents</p>
+                  <table class="table table-bordered mb-0">
+                    <thead>
+                      <tr>
+                        <th width="60" class="text-center">S.No</th>
+                        <th>Document Name</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td align="center">1</td>
+                      <td>Justification Report</td>
+                    </tr>
+                    <tr>
+                      <td  align="center">2</td>
+                      <td>Stability Data</td>
+                    </tr>
+                    <tr>
+                      <td  align="center">3</td>
+                      <td>Justification Report</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="text-right mt-2">
+                  <button class="btn btn-primary btn-sm minW80">Export</button>
+                  <button class="btn btn-info btn-sm minW80">Print</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Modal -->
+
+<div class="modal fade" id="addNewArea" tabindex="-1" role="dialog" aria-labelledby="newArea" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newArea">Add Another Area</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group mb-0">
+            <label>Select Change Area</label>
+            <select class="form-control">
+              <option>Manufacturing Process</option>
+              <option>Analytical Process</option>
+              <option>QMS Process</option>
+              <option>Vendor Process</option>
+              <option>IT Process</option>
+              <option>Facility & Utility</option>
+              <option>Equipment & Instrument</option>
+              <option>Packaging & Labeling</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info btn-sm minW80">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label>User ID</label>
+            <input type="text" class="form-control loginUserID" />
+          </div>
+          <div class="form-group mb-0">
+            <label>Password</label>
+            <input type="password" class="form-control loginPassword" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer"> <a href="#!" class="float-left mr-3">Forgot Password?</a>
+        <button type="button" class="btn btn-info btn-sm minW80">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal right fade" id="aboutUs" tabindex="-1" role="dialog" aria-labelledby="aboutModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModal">About Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="font18">Quality Management System</h3>
+        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+        <p>Version 1</p>
+      </div>
+    </div>
+    <!-- modal-content --> 
+  </div>
+  <!-- modal-dialog --> 
+</div>
+<div class="modal fade" id="addPerson" tabindex="-1" role="dialog" aria-labelledby="add Person" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addPersonTeam">Add Person</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label>Select</label>
+            <select class="form-control">
+              <option>Rajendra Kumar</option>
+              <option>Prabhakar B</option>
+              <option>Satish Chilukurivari</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info btn-sm minW80">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="changeDetail" tabindex="-1" role="dialog" aria-labelledby="aboutModal">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chnage Details Modal">Details of Change</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="mb-2">Existing</p>
+            <textarea name="editor1"></textarea>
+            <hr>
+            <p class="mb-2">Proposed</p>
+            <textarea name="editor2"></textarea>
+            <hr>
+            <p class="mb-2">Justification</p>
+            <textarea name="editor3"></textarea>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col text-right">
+            <button class="btn btn-info btn-sm minW80">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-content --> 
+  </div>
+  <!-- modal-dialog --> 
+</div>
+<div class="modal fade" id="actionPlans" tabindex="-1" role="dialog" aria-labelledby="aboutModal">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Action Plans">Action Plans</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <div class="row formMain">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Action Plan</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label>Responsible Group/Person</label>
+              <select class="form-control">
+                <option>Select</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <label>No. of Days</label>
+            <input type="number"  class="form-control" />
+          </div>
+          <div class="col-sm-2">
+            <select class="form-control mt22">
+              <option>Days</option>
+              <option>Months</option>
+            </select>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col text-right">
+            <button class="btn btn-info btn-sm minW80">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-content --> 
+  </div>
+  <!-- modal-dialog --> 
+</div>
+<script src="js/jquery-3.2.1.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Scroll tabs --> 
+<!--<script src="js/jquery.scrolling-tabs.min.js"></script> --> 
+<!-- Progressbar Cirle --> 
+<script src="js/jQuery-plugin-progressbar.js"></script> 
+<!-- Chart --> 
+<script src="js/Chart.min.js"></script> 
+<script src="js/custom.js"></script> 
+<script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script> 
+<script>
+(function() {
+  $('.btn-tab-prev').on('click', function(e) {
+    e.preventDefault()
+    $('#' + $('.nav-item > .active').parent().prev().find('a').attr('id')).tab('show')
+  })
+  $('.btn-tab-next').on('click', function(e) {
+    e.preventDefault()
+    $('#' + $('.nav-item > .active').parent().next().find('a').attr('id')).tab('show')
+  })
+})();
+	
+	</script> 
+<script>
+			CKEDITOR.replace( 'editor1' );
+			CKEDITOR.replace( 'editor2' );
+			CKEDITOR.replace( 'editor3' );
+	</script>
+</body>
+</html>

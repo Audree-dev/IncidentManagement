@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>:: Quality Management System ::</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<link rel="stylesheet" href="css/jquery.scrolling-tabs.min.css" >
+<!-- Commeon CSS Sheet-->
+<link rel="stylesheet" href="css/common.css" >
+<link rel="stylesheet" href="css/style.css" >
+<link rel="stylesheet" href="css/dashboard.css" >
+<!-- Font Awesome -->
+<link href="css/fontawesome-all.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand navbar-dark topNav fixed-top"> <span class="dashBoardLogo"><i class="modTile">.CRN</i></span> <a class="navbar-brand" href="javascript:void(0)"><span class="brandIcon"></span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"> <a class="nav-link" href="javascript:void(0)" id="menuNavigate"><span class="fa fa-align-right"></span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="javascript:void(0)"><span class="fa fa-bell"></span></a> </li>
+		
+      <li class="nav-item mobDisNone"> <a class="nav-link" href="dashboard.html"><span class="fa fa-home"></span></a> </li>
+		<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="fa fa-th-large"></span>
+        </a>
+        <div class="dropdown-menu megaMenuMain" aria-labelledby="navbarDropdown">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-2">
+				  <h3>Transctions</h3>
+                <ul class="nav flex-column">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Create</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+				 </ul>
+              	</div>
+				<div class="col-md-2">
+				  <h3>Master Data</h3>
+                <ul class="nav flex-column">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Create</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+				 </ul>
+              	</div>
+				<div class="col-md-2">
+				  <h3>Configurations</h3>
+                <ul class="nav flex-column">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Create</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+				 </ul>
+              	</div>
+				<div class="col-md-2">
+				  <h3>Transctions</h3>
+                <ul class="nav flex-column">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Create</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+				 </ul>
+              	</div>
+				<div class="col-md-2">
+				  <h3>Admin</h3>
+                <ul class="nav flex-column">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Create</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Link item</a>
+					</li>
+				 </ul>
+              	</div>
+              
+            </div>
+          </div>
+          <!--  /.container  -->
+
+
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav my-lg-0">
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle rightDDMenu clearfix" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="avatarIcon"></span>
+        <div class="userNameNid">
+          <p>Chandu Adimulam</p>
+          <span>800006</span> </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right profileDDmenu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="javascript:void(0)"><span class="fa fa-user-circle"></span> Profile</a> <a class="dropdown-item" href="javascript:void(0)"><span class="fa fa-lock"></span> Change Password</a> <a class="dropdown-item" href="javascript:void(0)"><span class="fa fa-cog"></span> Settings</a> <a class="dropdown-item" href="index.html"><span class="fa fa-power-off"></span> Logout</a> </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<section>
+  <aside class="leftMain">
+    <ul>
+		<li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon active" data-toggle="dropdown"><span class="changeControl"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>Change Control </h3>
+          </li>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="CC_create.html">Create</a></li>
+          <li><a href="javascript:void(0)">Track My CC</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">Change Control List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">CC Reports</a></li>
+			  <li><a href="#!">CC Log</a></li>
+              <li><a href="#!">Action Plan Log</a></li>
+              <li><a href="#!">Action Plan Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+		<!-- 
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="deviation"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>Deviation </h3>
+          </li>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="deviation_create.html">Create</a></li>
+          <li><a href="javascript:void(0)">Track My Deviation</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">Deviation  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">Dev Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="incedent"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>INCIDENT</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My INCIDENT</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">INCIDENT  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">INCIDENT Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="oos"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>OOS</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My OOS</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">OOS  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">OOS Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="oot"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>OOT</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My OOT</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">OOT  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">OOT Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="businesssComplaint"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>Market Complaints</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My Complaints</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">Deviation  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">Dev Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li> -->
+      <li class="dropdown maduleDDmenu"><a href="#!" class="dropdown-toggle icon" data-toggle="dropdown"><span class="capa"></span></a>
+        <ul class="dropdown-menu">
+          <li class="moduleTitle">
+            <h3>CAPA</h3>
+          </li>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Create</a></li>
+          <li><a href="javascript:void(0)">Track My CAPA</a></li>
+          <li class="subMenu"><a href="javascript:void(0)">CAPA  List <span class="fa fa-angle-down float-right mt-1"></span></a>
+            <ul>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Log</a></li>
+              <li><a href="#!">CAPA Effectiveness Log</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="index.html" class="icon"><span class="fa fa-power-off"></span></a></li>
+    </ul>
+  </aside>
+  <div class="contentMain">
+    <div class="row">
+      <div class="col-sm-9">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Change Control</li>
+          </ol>
+          <a href="CC_create.html" class="float-right btn-success btn xsBtn mt15">Create <span class="fa fa-plus-square"></span></a> </nav>
+        <div>
+          <ul class="nav nav-tabs dashTabs" id="myTab" role="tablist">
+            <li class="nav-item"> <a class="nav-link active" id="deviationDraft-tab" data-toggle="tab" href="#deviationDraft" role="tab" aria-controls="deviationDraft" aria-selected="true">
+              <h3>25</h3>
+              Drafts CC</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="deviationReview-tab" data-toggle="tab" href="#deviationReview" role="tab" aria-controls="deviationReview" aria-selected="false">
+              <h3>03</h3>
+              Review</a> </li>
+			  <li class="nav-item"> <a class="nav-link" id="crnCFTReview-tab" data-toggle="tab" href="#crnCFTReview" role="tab" aria-controls="crnCFTReview" aria-selected="false">
+              <h3>03</h3>
+              Under CFT Review</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="deviationInvestigation-tab" data-toggle="tab" href="#deviationInvestigation" role="tab" aria-controls="deviationInvestigation" aria-selected="false">
+              <h3>07</h3>
+              Approval</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="deviationInvRevClosure-tab" data-toggle="tab" href="#deviationInvRevClosure" role="tab" aria-controls="deviationInvRevClosure" aria-selected="false">
+              <h3>08</h3>
+              Action Plan</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="deviationCAPA-tab" data-toggle="tab" href="#deviationCAPA" role="tab" aria-controls="deviationCAPA" aria-selected="false">
+              <h3>09</h3>
+              Action Plan Ext.</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="deviationCAPAExt-tab" data-toggle="tab" href="#deviationCAPAExt" role="tab" aria-controls="deviationCAPAExt" aria-selected="false">
+              <h3>14</h3>
+              Action Plan Ext. Approval</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="deviationCAPAVer-tab" data-toggle="tab" href="#deviationCAPAVer" role="tab" aria-controls="deviationCAPAVer" aria-selected="false">
+              <h3>23</h3>
+              Action Review</a> </li>
+			  <li class="nav-item"> <a class="nav-link" id="closure-tab" data-toggle="tab" href="#closure" role="tab" aria-controls="closure" aria-selected="false">
+              <h3>23</h3>
+              Closure</a> </li>
+          </ul>
+          <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="deviationDraft" role="tabpanel" aria-labelledby="draft-tab">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover mb-0 draftTable">
+                  <thead>
+                    <tr>
+                      <th class="text-center">S.No.</th>
+                      <th>CC Initiated On</th>
+                      <th>CC No. </th>
+                      <th>CC Initiated By</th>
+                      <th>Dept</th>
+                      <th class="text-center">Status</th>
+                      <th class="text-center">Due in days</th>
+                      <th class="text-center">Pending with </th>
+                      <th class="text-center">Report View</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td align="center">1</td>
+                      <td>15/07/2018</td>
+                      <td>CC-2585</td>
+                      <td>Chandu Adimulam</td>
+                      <td>Q/A</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="100" data-duration="500"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF">05</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" id="pending" class="pendingIcon"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Initiator, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>HOD, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>QA Reviewer, 01-08-2018</span></li>
+                            <li class="">
+                              <p>Satish Chilukurivari</p>
+                              <span>RA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>QC, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Production, 01-08-2018</span></li>
+							<li>
+                              <p>Sarith Police</p>
+                              <span>Warehouse, 01-08-2018</span></li>
+							<li>
+                              <p>Pravallika</p>
+                              <span>QA Approver, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="images/CC_report.pdf" target="_blank">View</a></td>
+                    </tr>
+                    <tr>
+                      <td align="center">2</td>
+                      <td>22/07/2018</td>
+                      <td>CC-2585</td>
+                      <td>Rajendra Kumar</td>
+                      <td>Q/A</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="30" data-duration="500" data-color="#ccc,#ad6773"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF redC">-04</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" class="pendingIcon" id="pending"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+                    <tr>
+                      <td align="center">3</td>
+                      <td>25/07/2018</td>
+                      <td>CC-2585</td>
+                      <td>Prabhakar</td>
+                      <td>Q/A</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="75" data-duration="500" data-color="#ccc,#dd9042"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF orangeC">00</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" class="pendingIcon" id="pending"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+                    <tr>
+                      <td align="center">4</td>
+                      <td>29/07/2018</td>
+                      <td>CC-2585</td>
+                      <td>Shiva Kumar</td>
+                      <td>Admin</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="100" data-duration="500"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF">03</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" class="pendingIcon" id="pending"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+					
+                    <tr>
+                      <td align="center">5</td>
+                      <td>01/08/2018</td>
+                      <td>CC-2585</td>
+                      <td>Satish Kalluri</td>
+                      <td>.Net</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="100" data-duration="500"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF redC">-02</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" id="pending" class="pendingIcon"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+                    <tr>
+                      <td align="center">6</td>
+                      <td>03/08/2018</td>
+                      <td>CC-2585</td>
+                      <td>Ravi Shankar</td>
+                      <td>SAP</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="30" data-duration="500" data-color="#ccc,#ad6773"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF">03</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" class="pendingIcon" id="pending"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+                    <tr>
+                      <td align="center">7</td>
+                      <td>08/08/2018</td>
+                      <td>CC-2585</td>
+                      <td>Sarith Police</td>
+                      <td>.Net</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="75" data-duration="500" data-color="#ccc,#dd9042"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF">12</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" class="pendingIcon" id="pending"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+                    <tr>
+                      <td align="center">8</td>
+                      <td>11/08/2018</td>
+                      <td>CC-2585</td>
+                      <td>Muneeb Mahamud</td>
+                      <td>Q/A</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="100" data-duration="500"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF orangeC">00</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" class="pendingIcon" id="pending"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+					
+                    <tr>
+                      <td align="center">9</td>
+                      <td>12/08/2018</td>
+                      <td>CC-2585</td>
+                      <td>Satish Chilukurivari</td>
+                      <td>SAP</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="100" data-duration="500"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF redC">-03</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" id="pending" class="pendingIcon"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+                    <tr>
+                      <td align="center">10</td>
+                      <td>13/08/2018</td>
+                      <td>CC-2585</td>
+                      <td>Chandu Adimulam</td>
+                      <td>Q/A</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="30" data-duration="500" data-color="#ccc,#ad6773"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF orangeC">00</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" class="pendingIcon" id="pending"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td align="center">11</td>
+                      <td>13/08/2018</td>
+                      <td>CC-2585</td>
+                      <td>Chandu Adimulam</td>
+                      <td>Q/A</td>
+                      <td align="center"><div class="progressMain">
+                          <div class="progress-bar" data-percent="100" data-duration="500"></div>
+                        </div></td>
+                      <td align="center"><span class="boldF">03</span></td>
+                      <td align="center"><a data-toggle="popover" data-container="body" data-html="true" href="javascript:void(0)" class="pendingIcon" id="pending"><span class="fa fa-hourglass-start" style="margin:3px 0 0 0"></span></a>
+                        <div id="popover-content-pending" class="hidden">
+                          <ul class="penWMain">
+                            <li class="complete">
+                              <p>Chandu adimulam</p>
+                              <span>Creater, 01-08-2018</span></li>
+                            <li>
+                              <p>Rajendra Kumar Reddy</p>
+                              <span>Reviewer, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Prabhakra B</p>
+                              <span>Approver, 01-08-2018</span></li>
+                            <li class="current">
+                              <p>Satish Chilukurivari</p>
+                              <span>QA, 01-08-2018</span></li>
+                            <li class="complete">
+                              <p>Pavan Konidala</p>
+                              <span>Investigation, 01-08-2018</span></li>
+                            <li>
+                              <p>Shiva kumar</p>
+                              <span>Creater, 01-08-2018</span></li>
+                          </ul>
+                        </div></td>
+                      <td align="center"><a href="#!">View</a></td>
+                    </tr>
+                    
+					
+                  </tbody>
+                </table>
+              </div>
+				<div class="mt-2">
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination justify-content-end pagination-sm customPagination">
+						<li class="page-item">
+						  <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						</li>
+						<li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+						<li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+						<li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+						<li class="page-item">
+						  <a class="page-link" href="javascript:void(0)" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</li>
+					  </ul>
+					</nav>
+				</div>
+            </div>
+			  
+            <div class="tab-pane fade" id="deviationReview" role="tabpanel" aria-labelledby="deviationReview-tab">Review</div>
+            <div class="tab-pane fade" id="crnCFTReview" role="tabpanel" aria-labelledby="crnCFTReview-tab">CFT Review</div>
+            <div class="tab-pane fade" id="deviationInvestigation" role="tabpanel" aria-labelledby="contact-tab">Approval</div>
+            <div class="tab-pane fade" id="deviationInvRevClosure" role="tabpanel" aria-labelledby="contact-tab">Action Plan</div>
+            <div class="tab-pane fade" id="deviationCAPA" role="tabpanel" aria-labelledby="contact-tab">Action Plan Ext.</div>
+            <div class="tab-pane fade" id="deviationCAPAExt" role="tabpanel" aria-labelledby="contact-tab">Action Plan Ext. Approval</div>
+            <div class="tab-pane fade" id="deviationCAPAVer" role="tabpanel" aria-labelledby="contact-tab">Action Review</div>
+			<div class="tab-pane fade" id="closure" role="tabpanel" aria-labelledby="contact-tab">Closure</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+		<div class="graphTitle">
+			<div>My TAT 
+				<div class="float-right">
+					<div class="dropdown ">
+			  <a class="dropdown-toggle rightDDMenu" href="#" role="button" id="hideGraph" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="fa fa-cog"></span>
+			  </a>
+
+			  <div class="dropdown-menu dropdown-menu-right profileDDmenu" aria-labelledby="hideGraph">
+				<a class="dropdown-item" href="#">Hide</a>
+			  </div>
+			</div>
+				</div>
+			
+			</div>
+		</div>
+		 <hr>
+		<div class="graphMain">
+			<canvas id="myChart" style="max-width: 100%; height: 220px"></canvas>  
+		</div>
+		<div class="graphMain mt-2 text-center pb-2 pt-3">
+			<p class="text-left pl-3 mb-2">Lead Time Analysis</p>
+			<img src="images/chart.jpg" alt="graph" />  
+		</div>
+	</div>
+    </div>
+  </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label>User ID</label>
+            <input type="text" class="form-control loginUserID" />
+          </div>
+          <div class="form-group mb-0">
+            <label>Password</label>
+            <input type="password" class="form-control loginPassword" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer"> <a href="#!" class="float-left mr-3">Forgot Password?</a>
+        <button type="button" class="btn btn-info btn-sm minW80">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal right fade" id="aboutUs" tabindex="-1" role="dialog" aria-labelledby="aboutModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModal">About Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="font18">Quality Management System</h3>
+        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+        <p>Version 1</p>
+      </div>
+    </div>
+    <!-- modal-content --> 
+  </div>
+  <!-- modal-dialog --> 
+</div>
+<script src="js/jquery-3.2.1.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- Scroll tabs --> 
+<script src="js/jquery.scrolling-tabs.min.js"></script> 
+<!-- Progressbar Cirle --> 
+<script src="js/jQuery-plugin-progressbar.js"></script> 
+<!-- Chart -->
+<script src="js/Chart.min.js"></script> 
+<script src="js/custom.js"></script> 
+<script>
+	$('.nav-tabs').scrollingTabs();
+	$(".progress-bar").loading();
+	$("[data-toggle=popover]").each(function(i, obj) {
+	$(this).popover({
+		  html: true,
+		  content: function() {
+			var id = $(this).attr('id')
+			return $('#popover-content-' + id).html();
+		  }
+		});
+	});
+	$('body').on('click', function (e) {
+    $('[data-toggle="popover"]').each(function () {
+        //the 'is' for buttons that trigger popups
+        //the 'has' for icons within a button that triggers a popup
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+            $(this).popover('hide');
+        }
+    });
+});
+</script>
+	<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["March", "April", "May", "June", "July", "Auguest"],
+        datasets: [{
+            label: 'Avg. Closure time for my CC’s	',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+// Line chart
+		var ctx = document.getElementById("myChart1").getContext('2d');
+var myChart1 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["March", "April", "May", "June", "July", "Auguest"],
+        datasets: [{
+            label: 'Lead Time Analysis',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+</body>
+</html>

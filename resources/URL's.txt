@@ -1,0 +1,15 @@
+==== Dashboard scroll tabs ===
+====                       ===
+https://www.jqueryscript.net/demo/jQuery-Plugin-To-Create-Responsive-Scrolling-Bootstrap-Tabs/
+
+==== Dashboard Charts ===
+====                       ===
+
+http://www.chartjs.org/docs/latest/
+https://github.com/chartjs/Chart.js/releases/tag/v2.7.2
+
+
+==== Rounded Progress bar circle ===
+====                       ===
+
+https://www.jqueryscript.net/loading/Dynamic-Circular-Progress-Bar-with-jQuery-CSS3.html

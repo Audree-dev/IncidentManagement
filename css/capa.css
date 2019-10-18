@@ -1,0 +1,10 @@
+.ccIcon{width: 60px;
+    height: 60px;
+    display: inline-block;
+	background: url(../images/spriteImg.png) no-repeat;}
+.ccp{
+	background-position: -425px 0px;
+}
+.cap{
+	background-position: -365px 0px
+}
